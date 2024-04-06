@@ -16,7 +16,7 @@ async fn main() -> Result<()> {
 
 async fn fetch_weather(city: String) -> Result<()> {
     use html2text::config;
-    let url = format!("https://wttr.in/{}", city);
+    let url = format!("https://wttr.in/{city}");
     let bytes = reqwest::get(&url)
         .await
         .context("Failed to make network request")?
