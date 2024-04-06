@@ -12,7 +12,7 @@ or build it:
 
 or install it on your system
 
-`cargo install path ./`
+`cargo install --path ./`
 
 Then you can use it from anywhere
 
